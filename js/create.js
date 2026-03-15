@@ -13,7 +13,7 @@ async function addGuitar() {
 
     const response = await fetch(API, {
         method: 'POST',
-        headers: {'Content-Type': 'application/json'},
+        headers: {'Content-Type': 'application/json', 'Authorization': `Bearer ${token}`},
         body: JSON.stringify({name, model, color, price, in_stock})
     })
 

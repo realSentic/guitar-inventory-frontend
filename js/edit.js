@@ -15,7 +15,7 @@ async function editGuitar() {
 
     const response = await fetch(`${API}/${id}`, {
         method: 'PUT',
-        headers: {'Content-Type': 'application/json'},
+        headers: {'Content-Type': 'application/json', 'Authorization': `Bearer ${token}`},
         body: JSON.stringify({name, model, color, price, in_stock, id})
     })
 
