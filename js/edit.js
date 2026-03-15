@@ -1,4 +1,4 @@
-const API = 'http://localhost:5000/api/v1/guitars';
+const API = 'https://guitar-inventory-api.onrender.com/api/v1/guitars';
 const params = new URLSearchParams(window.location.search);
 const id = params.get('id');
 const saveBtn = document.getElementById('saveBtn');

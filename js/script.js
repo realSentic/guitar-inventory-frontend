@@ -1,4 +1,4 @@
-const API = 'http://localhost:5000/api/v1/guitars'
+const API = 'https://guitar-inventory-api.onrender.com/api/v1/guitars'
 const tbody = document.querySelector('tbody');
 const signOut = document.getElementById('signout')
 const token = localStorage.getItem('token');
